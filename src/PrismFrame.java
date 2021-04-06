@@ -43,6 +43,11 @@ public class PrismFrame {
 	//Inicjuje ETYKIETA
 	JLabel label1;
 	
+	//Inicjuje RADIOBUTTON
+	ButtonGroup BG;
+	JRadioButton radioButton1;
+	JRadioButton radioButton2;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
