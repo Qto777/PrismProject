@@ -29,6 +29,12 @@ public class PrismFrame {
 	JMenuItem menuItem3;
 	JMenuItem menuItem4;
 	
+	//Inicjuje SUWAK
+	JSlider slider;
+	static final int SLIDER_MIN = 3;
+	static final int SLIDER_MAX = 33;
+	static final int SLIDER_INIT = 3;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
