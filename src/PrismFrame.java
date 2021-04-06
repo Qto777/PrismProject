@@ -21,6 +21,14 @@ public class PrismFrame {
 	JPanel panel4;
 	JPanel panel5;
 	
+	//Inicjuje MENU
+	JMenuBar menuBar;
+	JMenu menu;
+	JMenuItem menuItem1;
+	JMenuItem menuItem2;
+	JMenuItem menuItem3;
+	JMenuItem menuItem4;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
