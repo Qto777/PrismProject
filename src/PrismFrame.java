@@ -73,6 +73,16 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		Graphics2D g2d = (Graphics2D) g;
 		
+		//Tworze PANELE---------------------------
+		panel1 = new JPanel();
+		panel1.setLayout(new FlowLayout());
+		panel2 = new JPanel();
+		panel2.setLayout(new GridLayout(2,1));
+		panel3 = new JPanel();
+		panel3.setLayout(new GridLayout(2,1));
+		panel4 = new JPanel();
+		panel5 = new JPanel();
+		panel5.setLayout(new FlowLayout());
 	}
 
 	public static void main(String[] args) {
