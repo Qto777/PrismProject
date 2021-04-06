@@ -40,6 +40,9 @@ public class PrismFrame {
 	JButton button2;
 	JButton button3;
 	
+	//Inicjuje ETYKIETA
+	JLabel label1;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
