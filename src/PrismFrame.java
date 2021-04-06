@@ -51,6 +51,13 @@ public class PrismFrame {
 	//Inicjuje POLE_TEKSTOWE
 	JTextField textField;
 	
+	//Inicjuje zmienne
+	int lineWidth = 1;
+	Color defaultColor = Color.black;
+	Color backgroundColor = Color.white;
+	Random rand = new Random();
+	
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
