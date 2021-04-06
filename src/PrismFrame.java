@@ -48,6 +48,9 @@ public class PrismFrame {
 	JRadioButton radioButton1;
 	JRadioButton radioButton2;
 	
+	//Inicjuje POLE_TEKSTOWE
+	JTextField textField;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
