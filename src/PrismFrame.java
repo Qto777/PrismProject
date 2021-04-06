@@ -35,6 +35,11 @@ public class PrismFrame {
 	static final int SLIDER_MAX = 33;
 	static final int SLIDER_INIT = 3;
 	
+	//Inicjuje GUZIK
+	JButton button1;
+	JButton button2;
+	JButton button3;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
