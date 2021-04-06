@@ -21,6 +21,7 @@ import javax.swing.JSlider;
 import javax.swing.JTextField;
 
 public class PrismFrame {
+public class PrismFrame extends JFrame implements ActionListener  {
 	//Inicjuje PANELE
 	JPanel panel1;
 	JPanel panel2;
