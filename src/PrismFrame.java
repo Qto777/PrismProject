@@ -13,6 +13,14 @@ import javax.swing.JRadioButton;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
 
+public class PrismFrame {
+	//Inicjuje PANELE
+	JPanel panel1;
+	JPanel panel2;
+	JPanel panel3;
+	JPanel panel4;
+	JPanel panel5;
+	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
 	}
