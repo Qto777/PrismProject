@@ -177,6 +177,19 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		textField4 = new JTextField("27,5");
 		textField5 = new JTextField("42,1");
 		
+		//DODAJE KOMPONENTY
+		panelPrawy.add(n1);
+		panelPrawy.add(textField1);
+		panelPrawy.add(n2);
+		panelPrawy.add(textField2);
+		panelPrawy.add(alfa1);
+		panelPrawy.add(textField3);
+		panelPrawy.add(beta);
+		panelPrawy.add(textField4);
+		panelPrawy.add(alfa2);
+		panelPrawy.add(textField5);
+		panelSrodek.paintComponents(getGraphics());
+		
 	}
 
 	public static void main(String[] args) {
