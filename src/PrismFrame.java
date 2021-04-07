@@ -190,6 +190,13 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		panelPrawy.add(textField5);
 		panelSrodek.paintComponents(getGraphics());
 		
+		//DODAJE PANELE--------------------------------------
+		this.add(panelSrodek, BorderLayout.CENTER);
+		this.add(panelPrawy, BorderLayout.LINE_END);
+		this.add(panelLewy, BorderLayout.LINE_START);
+
+	}
+
 	}
 
 	public static void main(String[] args) {
