@@ -20,12 +20,6 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JMenuItem menuItem3;
 	JMenuItem menuItem4;
 	
-	//Inicjuje SUWAK
-	JSlider slider;
-	static final int SLIDER_MIN = 3;
-	static final int SLIDER_MAX = 33;
-	static final int SLIDER_INIT = 3;
-	
 	//Inicjuje GUZIK
 	JButton button1;
 	JButton button2;
