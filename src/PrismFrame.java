@@ -57,16 +57,19 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		this.setSize(800,500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
+		rysuj();
 		//Tworze PANELE---------------------------
-		panel1 = new JPanel();
-		panel1.setLayout(new FlowLayout());
-		panel2 = new JPanel();
-		panel2.setLayout(new GridLayout(2,1));
-		panel3 = new JPanel();
-		panel3.setLayout(new GridLayout(2,1));
-		panel4 = new JPanel();
-		panel5 = new JPanel();
-		panel5.setLayout(new FlowLayout());
+		
+		
+		panelSrodek.setPreferredSize(new Dimension(400, 200));
+		
+		panelPrawy = new JPanel();
+		panelPrawy.setLayout(new GridLayout(15,1));
+		
+		panelLewy = new JPanel();
+		panelLewy.setLayout(new GridLayout(3,1));	
+		
+		
 	}
 
 	public static void main(String[] args) {
