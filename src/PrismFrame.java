@@ -170,6 +170,13 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		beta = new JLabel("Kat padania beta");
 		alfa2 = new JLabel("Kat padania alfa_2");
 
+		//TEXTFIELDS----------------------------------------
+		textField1 = new JTextField("1,01");
+		textField2 = new JTextField("1,53");
+		textField3 = new JTextField("45");
+		textField4 = new JTextField("27,5");
+		textField5 = new JTextField("42,1");
+		
 	}
 
 	public static void main(String[] args) {
