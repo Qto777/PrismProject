@@ -132,6 +132,37 @@ public class PrismFrame extends JFrame implements ActionListener  {
         panelLewy.add(zapiszDoPliku);
         panelLewy.add(zakoncz);
         
+        //RADIOBUTTONS-------------------------------------
+        radioButton1 = new JRadioButton("Zapalone swiatlo");
+        radioButton1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+    			panelSrodek.setBackground(Color.white);
+    			rysuj();
+			}
+		});
+		radioButton1.setSelected(true);
+		
+		radioButton2 = new JRadioButton("Zgaszone swiatlo");
+		radioButton2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+    			panelSrodek.setBackground(Color.black);
+    			rysuj();
+			}
+		});
+		BG = new ButtonGroup();
+		BG.add(radioButton1);
+		BG.add(radioButton2);
+		
+		on_offLabel = new JLabel("Wlacz/Wylacz swiatlo:");
+		panelPrawy.add(on_offLabel);
+		
+		panelPrawy.add(radioButton1);
+		panelPrawy.add(radioButton2);
+		
 	}
 
 	public static void main(String[] args) {
