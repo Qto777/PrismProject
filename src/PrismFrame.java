@@ -46,6 +46,11 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JTextField textField4;
 	JTextField textField5;
 	
+	//Zmienne
+	int lineWidth = 2;
+	Color defaultColor = Color.gray;
+	Color backgroundColor;
+	Polygon trojkat;
 	
 	public PrismFrame() {
 		// TODO Auto-generated constructor stub
