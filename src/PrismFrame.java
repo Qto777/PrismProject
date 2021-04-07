@@ -53,11 +53,9 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	Polygon trojkat;
 	
 	public PrismFrame() {
-		// TODO Auto-generated constructor stub
 		super("Prism Simulator");
 		this.setSize(800,500);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		Graphics2D g2d = (Graphics2D) g;
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		//Tworze PANELE---------------------------
 		panel1 = new JPanel();
