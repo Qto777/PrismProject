@@ -84,6 +84,20 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		panelLewy.setLayout(new GridLayout(3,1));	
 		
 		
+		//MENU-------------------------------------
+        menuBar = new JMenuBar();
+        menu = new JMenu("Wybierz wiazke");
+        menuItem1 = new JMenuItem("Wiazka mono czerwona");
+        menuItem2 = new JMenuItem("Wiazka mono zielona");
+        menuItem3 = new JMenuItem("Wiazka mono fioletowa");
+        menuItem4 = new JMenuItem("Wiazka swiatla bialego");
+		
+		menu.add(menuItem1);
+        menu.add(menuItem2);
+        menu.add(menuItem3);
+        menu.add(menuItem4);
+        menuBar.add(menu);
+        
 	}
 
 	public static void main(String[] args) {
