@@ -6,7 +6,6 @@ import javax.swing.event.ChangeListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class PrismFrame {
 public class PrismFrame extends JFrame implements ActionListener  {
 	//Inicjuje PANELE
 	JPanel panelSrodek;
