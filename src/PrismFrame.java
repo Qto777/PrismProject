@@ -9,11 +9,9 @@ import java.awt.event.ActionListener;
 public class PrismFrame {
 public class PrismFrame extends JFrame implements ActionListener  {
 	//Inicjuje PANELE
-	JPanel panel1;
-	JPanel panel2;
-	JPanel panel3;
-	JPanel panel4;
-	JPanel panel5;
+	JPanel panelSrodek;
+	JPanel panelPrawy;
+	JPanel panelLewy;
 	
 	//Inicjuje MENU
 	JMenuBar menuBar;
