@@ -163,6 +163,13 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		panelPrawy.add(radioButton1);
 		panelPrawy.add(radioButton2);
 		
+		//LABELS--------------------------------------------
+		n1 = new JLabel("Wspolczynnik zalamania 1");
+		n2 = new JLabel("Wspolczynnik zalamania 2");
+		alfa1 = new JLabel("Kat padania alfa_1");
+		beta = new JLabel("Kat padania beta");
+		alfa2 = new JLabel("Kat padania alfa_2");
+
 	}
 
 	public static void main(String[] args) {
