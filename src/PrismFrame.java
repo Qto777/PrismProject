@@ -40,6 +40,11 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JRadioButton radioButton2;
 	
 	//Inicjuje POLE_TEKSTOWE
+	JTextField textField1;
+	JTextField textField2;
+	JTextField textField3;
+	JTextField textField4;
+	JTextField textField5;
 	
 	
 	public PrismFrame() {
