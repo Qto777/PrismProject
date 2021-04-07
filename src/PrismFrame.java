@@ -1,24 +1,5 @@
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.util.Random;
-
-public class PrismFrame {
-import java.awt.Component;
-import java.awt.FlowLayout;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GridLayout;
 import java.awt.event.ActionListener;
-import javax.swing.ButtonGroup;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-import javax.swing.JRadioButton;
-import javax.swing.JSlider;
-import javax.swing.JTextField;
 
 public class PrismFrame {
 public class PrismFrame extends JFrame implements ActionListener  {
