@@ -21,9 +21,9 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JMenuItem menuItem4;
 	
 	//Inicjuje GUZIK
-	JButton button1;
-	JButton button2;
-	JButton button3;
+	JButton rysujWiazke;
+	JButton zapiszDoPliku;
+	JButton zakoncz;
 	
 	//Inicjuje ETYKIETA
 	JLabel label1;
