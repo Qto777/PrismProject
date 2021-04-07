@@ -40,13 +40,6 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JRadioButton radioButton2;
 	
 	//Inicjuje POLE_TEKSTOWE
-	JTextField textField;
-	
-	//Inicjuje zmienne
-	int lineWidth = 1;
-	Color defaultColor = Color.black;
-	Color backgroundColor = Color.white;
-	Random rand = new Random();
 	
 	
 	public PrismFrame() {
