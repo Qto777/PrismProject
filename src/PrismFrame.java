@@ -98,6 +98,11 @@ public class PrismFrame extends JFrame implements ActionListener  {
         menu.add(menuItem4);
         menuBar.add(menu);
         
+        typeLabel = new JLabel("Rodzaj swiatla:");
+        paintComponents(getGraphics());
+        panelPrawy.add(typeLabel);
+        panelPrawy.add(menuBar);
+        
 	}
 
 	public static void main(String[] args) {
