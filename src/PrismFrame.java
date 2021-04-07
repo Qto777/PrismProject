@@ -59,6 +59,20 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		
 		rysuj();
 		//Tworze PANELE---------------------------
+		panelSrodek = new JPanel() {
+			
+			@Override
+			protected void paintComponent(Graphics g) { 
+		    	super.paintComponent(g);
+		    	
+				Graphics2D g2d = (Graphics2D) g;
+				BasicStroke stroke = new BasicStroke(lineWidth);
+                g2d.setStroke(stroke);
+		    	g2d.translate(this.getSize().width / 2, this.getSize().height / 2);
+				g2d.setColor(defaultColor);
+				g2d.drawPolygon(trojkat);
+		    }
+		};
 		
 		
 		panelSrodek.setPreferredSize(new Dimension(400, 200));
