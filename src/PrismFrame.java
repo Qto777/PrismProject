@@ -1,4 +1,9 @@
+import java.awt.*;
+import javax.swing.*;
 import java.awt.Graphics2D;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PrismFrame {
