@@ -137,6 +137,38 @@ public class PrismFrame extends JFrame implements ActionListener  {
 				BasicStroke stroke = new BasicStroke(lineWidth);
                 g2d.setStroke(stroke);
 		    	g2d.translate(this.getSize().width / 2, this.getSize().height / 2);
+		    	
+
+				//silnik matematyczno-geometryczny------------------------
+				double y1; //prosta wiązki wpadajacej
+				y1 = -Math.tan(alfa1-Math.PI/6)*(-170) - 5710/127; //dopasowująca się 2-ga współrzędna pktu początkowego wiązki padającej
+				
+				
+				sinAlfa1 = Math.sin(alfa1); //sinus kąta padania promienia padającego na pryzmat
+				sinBeta1 = sinAlfa1*n*lambda; //Prawo Snelliusa, aby mieć kąt ugięcia beta
+				cosBeta = Math.sqrt(1-sinBeta1*sinBeta1);
+				beta1 = Math.asin(sinAlfa1*n*lambda); //kąt załamania promienia padającego na pryzmat
+				beta1Deg = beta1 * 57.3;
+				beta2 = Math.PI/3 - beta1; //kąt padania promienia wychodzącego z pryzmatu
+				sinBeta2 = Math.sin(beta2); 
+				alfa2 = Math.asin(sinBeta2*n*lambda); //kąt załamania promienia wychodzącego z pryzmatu
+				alfa2Deg = alfa2 * 57.3;
+				
+				double x2, y2, aUgiete; //wiązka ugięta
+				y2 = ProstaPodKatem(-43, -26, beta1, 40);
+				aUgiete = Math.tan(Math.atan(26/43)-beta1);
+				x2 = XPrzeciecia2Prostych( aUgiete, -26, 149/86, -100);
+				
+				double yN, y1N; //Normalna prawa
+				yN = -(Math.sqrt(3)/3)*170 + y2 + x2*(86/149);
+				y1N = (Math.sqrt(3)/3)*60 + y2 + x2*(86/149);
+				
+				double y3; //wiązka wychodząca
+                double a3 = Math.tan(alfa2-Math.PI/6);
+                double b3 = y2 - a3*x2;
+                y3 = a3*170 + b3;
+				
+				
 				g2d.setColor(defaultColor);
 				g2d.drawPolygon(trojkat);
 		    }
