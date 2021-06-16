@@ -66,11 +66,6 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JLabel waveLabel;
 	JLabel typeLabel;
 	JLabel on_offLabel;
-	JLabel n1;
-	JLabel n2;
-	JLabel alfa1;
-	JLabel beta;
-	JLabel alfa2;
 	JLabel n1Label;
 	JLabel n2Label;
 	JLabel alfa1Label;
