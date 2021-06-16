@@ -243,16 +243,8 @@ public class PrismFrame extends JFrame implements ActionListener  {
       //BUTTONS-------------------------------------------
         rysujWiazke = new JButton("ON/OFF");
         zapiszDoPliku = new JButton("Zapisz do pliku");
-        zakoncz = new JButton("Zakoncz");
         
         rysujWiazke.setSize(new Dimension(60, 30));
-        rysujWiazke.addActionListener(new ActionListener() {
-        	
-          	 @Override
-               public void actionPerformed(ActionEvent e){
-          		//rysowanie wiazki swiatla
-               }
-   		});
         
         zapiszDoPliku.setSize(new Dimension(60, 30));
 
