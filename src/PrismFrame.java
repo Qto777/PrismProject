@@ -227,6 +227,19 @@ public class PrismFrame extends JFrame implements ActionListener  {
         panelPrawy.add(menuBar);
         panelPrawy.add(waveLabel);
         
+      /*//SLIDER--------------------------------------------
+        kolorSlider = new JSlider();
+        kolorSlider = new JSlider(JSlider.HORIZONTAL, SLIDER_MIN, SLIDER_MAX, SLIDER_INIT);
+        kolorSlider.setPreferredSize(new Dimension(300,50));//rozmiar suwaka
+        kolorSlider.setMajorTickSpacing(50); //gestosc przedzialow glownych
+        kolorSlider.setMinorTickSpacing(10); //gestosc podzialek
+        kolorSlider.setPaintTicks(true);//podzialki na pasku
+        kolorSlider.setPaintLabels(true); //przedzialy glowne, przedzialowe paska
+        kolorSlider.addChangeListener(new SliderChangeListener());
+        
+        */
+        
+        
       //BUTTONS-------------------------------------------
         rysujWiazke = new JButton("ON/OFF");
         zapiszDoPliku = new JButton("Zapisz do pliku");
