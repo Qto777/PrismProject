@@ -351,22 +351,25 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		
 		
 		//TEXTFIELDS----------------------------------------
-		textField1 = new JTextField("1,01");
-		textField2 = new JTextField("1,53");
+		//dlugoscFali = new JTextField("550");
 		textField3 = new JTextField("45");
 		textField4 = new JTextField("27,5");
 		textField5 = new JTextField("42,1");
 		
+		
 		//DODAJE KOMPONENTY
-		panelPrawy.add(n1);
-		panelPrawy.add(textField1);
-		panelPrawy.add(n2);
-		panelPrawy.add(textField2);
-		panelPrawy.add(alfa1);
+		//panelPrawy.add(kolorSlider);
+		//panelPrawy.add(dlugoscFali);
+		
+		panelPrawy.add(n1Label);
+		panelPrawy.add(nZewnatrz);
+		panelPrawy.add(n2Label);
+		panelPrawy.add(nPryzmat);
+		panelPrawy.add(alfa1Label);
 		panelPrawy.add(textField3);
-		panelPrawy.add(beta);
+		panelPrawy.add(betaLabel);
 		panelPrawy.add(textField4);
-		panelPrawy.add(alfa2);
+		panelPrawy.add(alfa2Label);
 		panelPrawy.add(textField5);
 		panelSrodek.paintComponents(getGraphics());
 		
