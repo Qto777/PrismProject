@@ -91,7 +91,14 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	int lineWidth = 2;
 	Color defaultColor = Color.gray;
 	Color backgroundColor;
+	Color kolorFali = Color.green;
 	Polygon trojkat;
+	double n1 = 1; 
+	double n2 = 1.31; //wspolczynniki
+	double lambda = 550, v, n;
+	double alfa1 = 45; //kat padania
+	double beta1, alfa2, beta1Deg, alfa2Deg;
+	double sinAlfa1, sinBeta1, sinBeta2, cosBeta, beta2;
 	
 	public PrismFrame() {
 		super("Prism Simulator");
