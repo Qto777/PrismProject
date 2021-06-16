@@ -412,7 +412,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 			
 			
 			if(alfaTest < 30 || alfaTest > 90) {
-				JOptionPane.showMessageDialog(null, "Kąt padania alfa1 musi być w przedziale (30°;90°)");
+				JOptionPane.showMessageDialog(null, "Kąt padania alfa1 jest poniżej minimalnego kąta załamania");
 			}
 			else {
 				nA = n2 / n1;
