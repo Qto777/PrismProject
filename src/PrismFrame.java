@@ -492,5 +492,13 @@ public class PrismFrame extends JFrame implements ActionListener  {
 			
 		
 	}
-
+	
+	/*//SUWAK - Klasa wewnetrzna 
+		public class SliderChangeListener implements ChangeListener{
+			@Override
+				public void stateChanged(ChangeEvent arg0) {
+				dlugoscFali.setText(" " + kolorSlider.getValue());
+				
+			}
+		}*/
 }
