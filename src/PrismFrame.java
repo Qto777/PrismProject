@@ -41,6 +41,8 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JPanel panelPrawy;
 	JPanel panelLewy;
 	
+	BufferedImage prism;
+	
 	//Inicjuje MENU
 	JMenuBar menuBar;
 	JMenu menu;
