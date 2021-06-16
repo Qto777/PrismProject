@@ -173,14 +173,12 @@ public class PrismFrame extends JFrame implements ActionListener  {
 				g2d.setColor(defaultColor);
 				g2d.drawPolygon(trojkat);
 				g2d.drawLine(-170, -99, 86, 49); //normalna lewa
-				g2d.drawLine((int)x2, (int)y2, 170, (int)yN); //normalna prawa
+				g2d.drawLine((int)x2 - 5, (int)y2, 170, (int)yN); //normalna prawa
 				g2d.setColor(kolorFali);
 				
 				g2d.drawLine(-170, (int)y1, -43, -26);
-				g2d.drawLine(-43, -26, (int)x2, (int)y2);
-				g2d.drawLine((int)x2, (int)y2, 170, (int)y3);
-				
-				
+				g2d.drawLine(-43, -26, (int)x2 - 5, (int)y2);
+				g2d.drawLine((int)x2 - 5, (int)y2, 170, (int)y3);
 		    }
 		};
 		
