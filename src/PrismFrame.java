@@ -97,6 +97,8 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	double n2 = 1.31; //wspolczynniki
 	double lambda = 550, v, nA, nB;
 	double alfa1 = 45; //kat padania
+	double sigmaDeg =32;
+	double granDeg = 88;
 	double beta1, alfa2, beta1Deg, alfa2Deg;
 	double sinAlfa1, sinBeta1, sinBeta2, cosBeta, beta2;
 	//Metody--------------------------------------
@@ -153,6 +155,10 @@ public class PrismFrame extends JFrame implements ActionListener  {
 				sinBeta2 = Math.sin(beta2); 
 				alfa2 = Math.asin(sinBeta2*nB*lambda); //kąt załamania promienia wychodzącego z pryzmatu
 				alfa2Deg = alfa2 * 57.3;
+				double sigma = 2*Math.asin(nA*Math.sin((Math.PI/3)/2)-Math.PI/3);
+				double gran = Math.asin(nA*Math.sin(Math.PI/3-Math.asin(1/nA)));
+				sigmaDeg = sigma*57.3;
+				granDeg = gran*57.3;
 				
 				double x2, y2, aUgiete; //wiązka ugięta
 				y2 = ProstaPodKatem(-43, -26, beta1, 40);
@@ -412,7 +418,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 			double alfaTest = Double.parseDouble(textField3.getText());
 			
 			
-			if(alfaTest < 30 || alfaTest > 90) {
+			if(alfaTest < 32 || alfaTest > 88) {
 				JOptionPane.showMessageDialog(null, "Kąt padania alfa1 jest poniżej minimalnego kąta załamania lub powyżej kąta granicznego");
 			}
 			else {
