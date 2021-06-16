@@ -297,6 +297,59 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		betaLabel = new JLabel("Kat ugięcia beta");
 		alfa2Label = new JLabel("Kat ugięcia alfa_2");
 		
+		//COMBOBOXES---------------------------------------
+		String[] wspN1 = {"Próżnia", "Powietrze", "Woda"};
+		String[] wspN2 = {"Lód", "Plexiglas", "Szkło CROWN", "Szkło FLINT", "Diament"};
+		
+		nZewnatrz = new JComboBox<String>();
+		nZewnatrz.addItem(wspN1[0]);
+		nZewnatrz.addItem(wspN1[1]);
+		nZewnatrz.addItem(wspN1[2]);
+		
+		nPryzmat = new JComboBox<String>();
+		nPryzmat.addItem(wspN2[0]);
+		nPryzmat.addItem(wspN2[1]);
+		nPryzmat.addItem(wspN2[2]);
+		nPryzmat.addItem(wspN2[3]);
+		nPryzmat.addItem(wspN2[4]);
+		
+		nZewnatrz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (nZewnatrz.getSelectedItem() == wspN1[0]) {
+                	n1 = 1.0;
+                }
+                else if (nZewnatrz.getSelectedItem() == wspN1[1]) {
+                	n1 = 1.0003;
+                }
+                else if (nZewnatrz.getSelectedItem() == wspN1[2]) {
+                	n1 = 1.33;
+                }
+            }
+        });
+		
+		nPryzmat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (nPryzmat.getSelectedItem() == wspN2[0]) {
+                	n2 = 1.31;
+                }
+                else if (nPryzmat.getSelectedItem() == wspN2[1]) {
+                	n2 = 1.489;
+                }
+                else if (nPryzmat.getSelectedItem() == wspN2[2]) {
+                	n2 = 1.52;
+                }
+                else if (nPryzmat.getSelectedItem() == wspN2[3]) {
+                	n2 = 1.66;
+                }
+                else if (nPryzmat.getSelectedItem() == wspN2[4]) {
+                	n2 = 2.417;
+                }
+            }
+        });
+		
+		
 		//TEXTFIELDS----------------------------------------
 		textField1 = new JTextField("1,01");
 		textField2 = new JTextField("1,53");
