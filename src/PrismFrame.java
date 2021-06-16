@@ -99,6 +99,26 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	double alfa1 = 45; //kat padania
 	double beta1, alfa2, beta1Deg, alfa2Deg;
 	double sinAlfa1, sinBeta1, sinBeta2, cosBeta, beta2;
+	//Metody--------------------------------------
+	
+	public double ProstaPodKatem(double pktX, double pktY, double angle, double newX) {
+		double m = Math.tan(Math.atan(pktY/pktX)-angle);
+		double newY = pktY-m*(pktX-newX);
+		return newY;
+	}
+	
+	public double XPrzeciecia2Prostych(double a1, double b1, double a2, double b2) {
+		double newX;
+		newX = (b2-b1)/(a1-a2);
+		return newX;
+	}
+	
+	public double YPrzeciecia2Prostych(double a1, double b1, double a2, double b2) {
+		double newY, newX;
+		newX = (b2-b1)/(a1-a2);
+		newY = a1*newX+b1;
+		return newY;
+	}
 	
 	public PrismFrame() {
 		super("Prism Simulator");
