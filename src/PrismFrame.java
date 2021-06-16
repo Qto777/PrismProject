@@ -164,7 +164,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 				y1N = (Math.sqrt(3)/3)*60 + y2 + x2*(86/149);
 				
 				double y3; //wiązka wychodząca
-                double a3 = Math.tan(alfa2-Math.PI/6);
+                double a3 = -Math.tan(alfa2-Math.PI/6);
                 double b3 = y2 - a3*x2;
                 y3 = a3*170 + b3;
 				
