@@ -412,7 +412,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 			
 			
 			if(alfaTest < 30 || alfaTest > 90) {
-				JOptionPane.showMessageDialog(null, "Kąt padania alfa1 jest poniżej minimalnego kąta załamania");
+				JOptionPane.showMessageDialog(null, "Kąt padania alfa1 jest poniżej minimalnego kąta załamania lub powyżej kąta granicznego");
 			}
 			else {
 				nA = n2 / n1;
