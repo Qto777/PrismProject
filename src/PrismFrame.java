@@ -196,6 +196,22 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		
 		//MENU-------------------------------------
         menuBar = new JMenuBar();
+        menu = new JMenu("Wybierz wiązkę");
+        menuItem1 = new JMenuItem("Wiązka mono czerwona");
+        menuItem1.setActionCommand("czerwona");
+        menuItem1.addActionListener(this);
+        
+        menuItem2 = new JMenuItem("Wiązka mono zielona");
+        menuItem2.setActionCommand("zielona");
+        menuItem2.addActionListener(this);
+        
+        menuItem3 = new JMenuItem("Wiązka mono fioletowa");
+        menuItem3.setActionCommand("fiolet");
+        menuItem3.addActionListener(this);
+        
+        menuItem4 = new JMenuItem("Wiązka swiatła białego");
+        menuItem4.setActionCommand("biala");
+        menuItem4.addActionListener(this);
 		
 		menu.add(menuItem1);
         menu.add(menuItem2);
