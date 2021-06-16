@@ -188,7 +188,6 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		panelSrodek.setPreferredSize(new Dimension(400, 200));
 		
 		panelPrawy = new JPanel();
-		panelPrawy.setLayout(new GridLayout(15,1));
 		
 		panelLewy = new JPanel();
 		panelLewy.setLayout(new GridLayout(3,1));	
@@ -196,11 +195,6 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		
 		//MENU-------------------------------------
         menuBar = new JMenuBar();
-        menu = new JMenu("Wybierz wiazke");
-        menuItem1 = new JMenuItem("Wiazka mono czerwona");
-        menuItem2 = new JMenuItem("Wiazka mono zielona");
-        menuItem3 = new JMenuItem("Wiazka mono fioletowa");
-        menuItem4 = new JMenuItem("Wiazka swiatla bialego");
 		
 		menu.add(menuItem1);
         menu.add(menuItem2);
