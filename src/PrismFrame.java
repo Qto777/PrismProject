@@ -145,13 +145,13 @@ public class PrismFrame extends JFrame implements ActionListener  {
 				
 				
 				sinAlfa1 = Math.sin(alfa1); //sinus kąta padania promienia padającego na pryzmat
-				sinBeta1 = sinAlfa1*n*lambda; //Prawo Snelliusa, aby mieć kąt ugięcia beta
+				sinBeta1 = sinAlfa1*nA*lambda; //Prawo Snelliusa, aby mieć kąt ugięcia beta
 				cosBeta = Math.sqrt(1-sinBeta1*sinBeta1);
-				beta1 = Math.asin(sinAlfa1*n*lambda); //kąt załamania promienia padającego na pryzmat
+				beta1 = Math.asin(sinAlfa1*nA*lambda); //kąt załamania promienia padającego na pryzmat
 				beta1Deg = beta1 * 57.3;
 				beta2 = Math.PI/3 - beta1; //kąt padania promienia wychodzącego z pryzmatu
 				sinBeta2 = Math.sin(beta2); 
-				alfa2 = Math.asin(sinBeta2*n*lambda); //kąt załamania promienia wychodzącego z pryzmatu
+				alfa2 = Math.asin(sinBeta2*nB*lambda); //kąt załamania promienia wychodzącego z pryzmatu
 				alfa2Deg = alfa2 * 57.3;
 				
 				double x2, y2, aUgiete; //wiązka ugięta
