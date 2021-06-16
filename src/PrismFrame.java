@@ -225,6 +225,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
         paintComponents(getGraphics());
         panelPrawy.add(typeLabel);
         panelPrawy.add(menuBar);
+        panelPrawy.add(waveLabel);
         
       //BUTTONS-------------------------------------------
         rysujWiazke = new JButton("ON/OFF");
