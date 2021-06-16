@@ -406,7 +406,90 @@ public class PrismFrame extends JFrame implements ActionListener  {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		if(e.getActionCommand() == "wiazka")
+		{	
+			double alfaTest = Double.parseDouble(textField3.getText());
+			
+			
+			if(alfaTest < 30 || alfaTest > 90) {
+				JOptionPane.showMessageDialog(null, "Kąt padania alfa1 musi być w przedziale (30°;90°)");
+			}
+			else {
+				nA = n2 / n1;
+				nB = n1 / n2;
+				alfa1 = alfaTest*(Math.PI/180); //zamiana na radiany
+				sinAlfa1 = Math.sin(alfa1); 
+				sinBeta1 = sinAlfa1*nA*lambda;
+				beta1 = Math.asin(sinAlfa1*nA*lambda);
+				beta1Deg = beta1 * 57.3;
+				beta2 = Math.PI/3 - beta1; 
+				sinBeta2 = Math.sin(beta2);
+				alfa2 = Math.asin(sinBeta2*nB*lambda); 
+				alfa2Deg = alfa2 * 57.3;
+				textField4.setText("" + (Math.abs(beta1Deg) + 30));
+				textField5.setText("" + (Math.abs(alfa2Deg) + 30));
+			}
+			
+			repaint();
+			
+		} else if (e.getActionCommand() == "zapisz") {
+			
+			prism = new BufferedImage(panelSrodek.getWidth(), panelSrodek.getHeight(), BufferedImage.TYPE_INT_RGB);
+			Graphics g2d = prism.createGraphics();
+			panelSrodek.paintAll(g2d);
+				
+			JFileChooser chooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+			chooser.setDialogTitle("Zapisz plik");
+			int result = chooser.showSaveDialog(null);
+			
+			if (JFileChooser.APPROVE_OPTION == result) {
+				File ofile = new File(chooser.getSelectedFile().getAbsolutePath() + ".png");
+				File txtfile = new File(chooser.getSelectedFile().getAbsolutePath() + ".txt");
+				FileWriter fw = null; 
+				try {
+					ImageIO.write (prism, "png", ofile);
+					fw = new FileWriter(txtfile);
+					fw.write("Współczynnik załamania ośrodka zewn.: " + n1 + "\n");
+					fw.write("Współczynnik załamania pryzmatu: " + n2  + "\n");
+                	fw.write("Kąt alfa_1: " + textField3.getText()  + "\n");
+                	fw.write("Kąt beta: " + textField4.getText()  + "\n");
+                	fw.write("Kąt alfa_2: " + textField5.getText()  + "\n");
+                	fw.flush();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+					System.out.println("Nie można zapisać do pliku");
+					System.exit(1);
+				}
+			}
+		} else if (e.getActionCommand() == "zakoncz") {
+			System.exit(0);
+		} else if (e.getActionCommand() == "czerwona") {
+			kolorFali = Color.red;
+			waveLabel.setText("Długość fali: 680nm");
+			lambda = 0.680;
+			nA = n2 / n1;
+			nB = n1 / n2;
+			repaint();
+		} else if (e.getActionCommand() == "zielona") {
+			kolorFali = Color.green;
+			waveLabel.setText("Długość fali: 550nm");
+			lambda = 0.550;
+			nA = n2 / n1;
+			nB = n1 / n2;
+			repaint();
+		} else if (e.getActionCommand() == "fiolet") {
+			kolorFali = Color.blue;
+			waveLabel.setText("Długość fali: 470nm");
+			lambda = 0.470;
+			nA = n2 / n1;
+			nB = n1 / n2;
+			repaint();
+		} else if (e.getActionCommand() == "biala") {
+			kolorFali = Color.white;
+			waveLabel.setText("Światło białe");
+			repaint();
+		}
+			
 		
 	}
 
