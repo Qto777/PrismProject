@@ -244,11 +244,15 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		int R = 100;
         int[] x = new int[3];
     	int[] y = new int[3];
+    	
 
     	for (int i = 0; i < 3; i++) {
     		x[i] = (int)(R * Math.cos((Math.PI / 2 + 2 * Math.PI * i) / 3));
     		y[i] = (int)(R * Math.sin((Math.PI / 2 + 2 * Math.PI * i) / 3));
+    		//System.out.println("Wierzchołek" + (i+1) + ": (" + x[i] + ";" + y[i] + ")\n");
     	}
+    	
+    	
     	trojkat = new Polygon(x, y, 3);
     	this.getContentPane().repaint();
 		
