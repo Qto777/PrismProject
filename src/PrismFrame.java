@@ -63,6 +63,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JButton zakoncz;
 	
 	//Inicjuje ETYKIETA
+	JLabel waveLabel;
 	JLabel typeLabel;
 	JLabel on_offLabel;
 	JLabel n1;
@@ -70,6 +71,11 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JLabel alfa1;
 	JLabel beta;
 	JLabel alfa2;
+	JLabel n1Label;
+	JLabel n2Label;
+	JLabel alfa1Label;
+	JLabel betaLabel;
+	JLabel alfa2Label;
 	
 	//Inicjuje RADIOBUTTON
 	ButtonGroup BG;
