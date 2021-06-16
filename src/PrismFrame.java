@@ -83,8 +83,6 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	
 	
 	//Inicjuje POLE_TEKSTOWE
-	JTextField textField1;
-	JTextField textField2;
 	JTextField textField3;
 	JTextField textField4;
 	JTextField textField5;
