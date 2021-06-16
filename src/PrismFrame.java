@@ -219,7 +219,9 @@ public class PrismFrame extends JFrame implements ActionListener  {
         menu.add(menuItem4);
         menuBar.add(menu);
         
-        typeLabel = new JLabel("Rodzaj swiatla:");
+        waveLabel = new JLabel("Długość fali: ");
+        
+        typeLabel = new JLabel("Rodzaj światła:");
         paintComponents(getGraphics());
         panelPrawy.add(typeLabel);
         panelPrawy.add(menuBar);
