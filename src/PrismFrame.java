@@ -254,6 +254,8 @@ public class PrismFrame extends JFrame implements ActionListener  {
         zapiszDoPliku.addActionListener(this);
 
         zakoncz.setSize(new Dimension(60, 30));
+        zakoncz.setActionCommand("zakoncz");
+        zakoncz.addActionListener(this);
         
         panelLewy.add(rysujWiazke);
         panelLewy.add(zapiszDoPliku);
