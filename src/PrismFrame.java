@@ -188,6 +188,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		panelSrodek.setPreferredSize(new Dimension(400, 200));
 		
 		panelPrawy = new JPanel();
+		panelPrawy.setLayout(new GridLayout(16,1));
 		
 		panelLewy = new JPanel();
 		panelLewy.setLayout(new GridLayout(3,1));	
