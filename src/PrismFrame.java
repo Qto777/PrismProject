@@ -95,7 +95,7 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	Polygon trojkat;
 	double n1 = 1; 
 	double n2 = 1.31; //wspolczynniki
-	double lambda = 550, v, n;
+	double lambda = 550, v, nA, nB;
 	double alfa1 = 45; //kat padania
 	double beta1, alfa2, beta1Deg, alfa2Deg;
 	double sinAlfa1, sinBeta1, sinBeta2, cosBeta, beta2;
