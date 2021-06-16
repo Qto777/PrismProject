@@ -77,6 +77,11 @@ public class PrismFrame extends JFrame implements ActionListener  {
 	JRadioButton radioButton1;
 	JRadioButton radioButton2;
 	
+	//Inicjuje COMBOBOX
+	JComboBox<String> nZewnatrz;
+	JComboBox<String> nPryzmat;
+	
+	
 	//Inicjuje POLE_TEKSTOWE
 	JTextField textField1;
 	JTextField textField2;
