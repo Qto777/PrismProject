@@ -140,9 +140,9 @@ public class PrismFrame extends JFrame implements ActionListener  {
 		    	
 
 				//silnik matematyczno-geometryczny------------------------
-				double y1; //prosta wiązki wpadajacej
+				double y1, y11; //prosta wiązki wpadajacej
 				y1 = -Math.tan(alfa1-Math.PI/6)*(-170) - 5710/127; //dopasowująca się 2-ga współrzędna pktu początkowego wiązki padającej
-				
+				y11 = Math.tan(alfa1+Math.PI/6)*(-170) - 5710/127;
 				
 				sinAlfa1 = Math.sin(alfa1); //sinus kąta padania promienia padającego na pryzmat
 				sinBeta1 = sinAlfa1*nA*lambda; //Prawo Snelliusa, aby mieć kąt ugięcia beta
